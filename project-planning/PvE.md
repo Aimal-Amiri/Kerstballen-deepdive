@@ -33,7 +33,7 @@
 
 ## Techniekenlijst
 
-- PHP, MySQL, Tailwindcss, html, JavaScript.
+- HTML, Tailwindcss, JavaScript.
 
 ## Realistische haalbaarheid
 
@@ -41,7 +41,7 @@
 
 ## Wat is onze doel in 4 dagen?
 
-- Een eenvoudige homepage
+- Een homepage met landing pages:
 - Basisinformatie over het product
 - Bestellen en contact nemen.
 

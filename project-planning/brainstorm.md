@@ -1,7 +1,7 @@
 ## indeviduele input
-- In eerste instantie wordt de website als prototype in Figma gebouwd.
-- Om de website te bouwen, gaan we de volgende technieken gebruiken:”
-- PHP, MySQL, Tailwind CSS, HTML en JavaScript.
+- In eerste instantie wordt de website als prototype in Figma ontworpen.
+- Voor het bouwen van de website gebruiken we tijdens deze DeepDive de volgende technieken: Tailwind CSS, HTML en JavaScript.
+- Voor de uiteindelijke implementatie van deze opdracht maken we later gebruik van een framework, zoals Laravel, in combinatie met HTML, Tailwind CSS en JavaScript
 
 ## Team-descussie
 
