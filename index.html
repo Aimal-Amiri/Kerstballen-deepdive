@@ -3,10 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kersteierballen</title>
+    <title>Spin de Kersteierbal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+        
+        body {
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 0.15em;
+        }
+    </style>
 </head>
-<body>
-    <h1 class="font-bold lg:text-6xl text-orange-200">Hello</h1>
-    <script type="module" src="./src/js/index.js"></script>
+<body class="bg-[#3CAF5C] min-h-screen flex flex-col relative overflow-hidden">
+    
+    <div class="text-center pt-10 pb-8">
+        <h1 class="text-[#FEE56A] text-5xl tracking-[0.15em] font-bold">SPIN DE KERSTEIERBAL</h1>
+    </div>
+
+    <div class="flex-1 flex items-center justify-center relative">
+        <div class="relative flex items-center">
+            <!-- Çark görseli -->
+            <div id="wheel" class="relative left-20">
+                <img src="images/Group 3 1.svg" alt="wheel" class="h-[650px]">
+            </div>
+            
+            <!-- Ok - çarkın sağında -->
+            <div class="relative left-[-120px]">
+                <img src="images/Union.svg" alt="arrow" class="h-[70px]">
+            </div>
+        </div>
+    </div>
+
+    <div class="absolute bottom-16 left-16">
+        <div class="mb-8">
+            <h2 class="text-white text-5xl leading-tight font-bold">
+                HIT GROEN<br>
+                EN WIN<br>
+                EEN GRATIS<br>
+                KERSTEIERBAL
+            </h2>
+        </div>
+        
+    </div>
+    <div class="flex justify-center">
+
+            <button id="startBtn" class="bg-[#FEE56A] tracking-[0.15em] text-3xl font-bold py-4 px-20 rounded-xl hover:bg-[#FDD835] transition-all shadow-xl uppercase">
+                START
+            </button>
+    </div>
+
+    <script>
+       const wheel = document.getElementById('wheel');
+        const startBtn = document.getElementById('startBtn');
+        let isSpinning = false;
+
+        let currentRotation = 0;
+
+        startBtn.addEventListener('click', () => {
+            if (isSpinning) return;
+            
+            isSpinning = true;
+            startBtn.disabled = true;
+            
+            const spinAmount = 1800 + Math.floor(Math.random() * 360);
+            currentRotation += spinAmount;
+            
+            wheel.style.transition = 'transform 3s ease-out';
+            wheel.style.transform = `rotate(${currentRotation}deg)`;
+            
+            setTimeout(() => {
+                isSpinning = false;
+                startBtn.disabled = false;
+            }, 3000);
+        });
+    </script>
 </body>
 </html>
