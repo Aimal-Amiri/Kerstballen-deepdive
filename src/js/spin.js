@@ -26,7 +26,7 @@ startBtn.addEventListener('click', () => {
         const isGreen = (finalDeg >= 82 && finalDeg <= 90);
 
         if (isGreen) {
-            console.log("KAZANDIN! YEŞİLE GELDİ.");
+            console.log("Gefeliciteerd! Je hebt gewonnen!");
         }
 
     }, 3000);
