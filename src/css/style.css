@@ -1,1 +1,76 @@
 @import "tailwindcss";
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.green-box {
+    background: linear-gradient(135deg, #2d7a4f, #1e5a3a);
+}
+
+.golden-bg {
+
+    background: linear-gradient(135deg, #d4a655, #b8923d);
+}
+
+.ornament {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 0.9;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.footer-with-svg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.onze-visie-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.onze-visie-wrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.onze-visie-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem;
+    color: white;
+    text-align: center;
+    pointer-events: none;
+}
+
+
+section {
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}

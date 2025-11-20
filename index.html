@@ -1,12 +1,304 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kersteierballen</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kersteierbal - Duurzame Kerstballen</title>
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
-<body>
-    <h1 class="font-bold lg:text-6xl text-orange-200">Hello</h1>
-    <script type="module" src="./src/js/index.js"></script>
+
+<body class="bg-white text-gray-900">
+
+    <header class="w-full py-6 px-4">
+        <div class="max-w-6xl mx-auto bg-[#FEE56A] rounded-2xl px-8 py-3 flex items-center justify-between shadow-lg relative">
+
+            <img src="Logo.png"
+                class="w-82 absolute top-12 right-220 translate-y-[-20%]" alt="Logo">
+
+            <nav class="flex gap-8 font-semibold text-sm ml-28 flex-1 justify-center">
+                <a href="#product" class="hover:text-green-700 transition">Ons product</a>
+                <a href="#over" class="hover:text-green-700 transition">Over ons</a>
+                <a href="#contact" class="hover:text-green-700 transition">Contact</a>
+                <a href="#bestellen" class="hover:text-green-700 transition">Bestellen</a>
+            </nav>
+
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+
+        </div>
+    </header>
+
+    <section class="max-w-6xl mx-auto mt-14">
+        <div class="rounded-2xl overflow-hidden shadow-2xl relative">
+            <!-- Background / Hero Image -->
+            <img src="Hero.png" alt="Hero image" class="rounded-xl w-full">
+
+            <!-- Hero text -->
+            <div class="absolute bottom-16 left-12 text-white z-10 max-w-xl">
+                <h1 class="text-5xl font-bold leading-tight mb-4">
+                    Jullie kerstboom<br>
+                    met een <span class="text-green-400">Gronings</span> karakter.
+                </h1>
+                <p class="text-lg mb-6 font-light">Bestel nu de Kersteierbal.</p>
+                <a href="#bestellen" class="inline-block bg-[#FEE56A] text-gray-900 font-bold px-8 py-3 rounded-lg hover:bg-yellow-400 transition shadow-lg">
+                    Bestel hier
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: De Kersteierbal -->
+    <section class="max-w-6xl mx-auto mt-20 flex flex-col md:flex-row gap-10 items-center px-2">
+
+        <!-- SVG background box -->
+        <div class="relative w-full md:w-1/2">
+
+            <!-- Put your SVG here (Group 4.svg kept as before) -->
+            <img src="Group 4.svg" alt="SVG background" class="w-full">
+
+            <!-- Text overlay inside SVG -->
+            <div class="absolute top-0 left-0 p-10">
+
+                <h2 class="font-prater text-3xl text-white">
+                    De Kersteierbal.
+                </h2>
+
+                <p class="font-mont text-white mt-4 leading-relaxed">
+                    Onze duurzame kerstbal verandert na de feestdagen in een kleurrijk bloemenveld.
+                    Gemaakt van natuurlijke materialen en gevuld met bloemzaden, biedt hij een unieke
+                    manier om een warm kerstgevoel om te zetten in iets dat blijft groeien.
+                    Hang hem in december in de boom en plant hem in het voorjaar voor een blijvende
+                    herinnering die elk seizoen opnieuw tot leven kan komen.
+                </p>
+
+                <a href="#"
+                    class="inline-block mt-5 bg-[#FEE56A] text-black font-semibold px-6 py-2 rounded-lg font-prater">
+                    Bestel hier
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Video as before -->
+        <video src="video.mp4" autoplay loop muted playsinline
+            class="rounded-xl shadow-lg w-full md:w-1/2 object-cover">
+        </video>
+
+    </section>
+
+    <!-- OVER ONS SECTION -->
+    <section id="over" class="max-w-6xl mx-auto px-4 mt-20 mb-20">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+
+            <!-- Left box -->
+            <div class="flex justify-center order-2 md:order-1">
+                <div class="bg-[#259A47] p-10 text-white shadow-xl max-w-md rounded-2xl">
+                    <h2 class="text-3xl font-bold mb-4">Over ons</h2>
+                    <p class="text-sm leading-relaxed">
+                        Bij Kerst Eierballen geloven we dat traditie én duurzaamheid perfect samen kunnen gaan. Daarom hebben we een unieke, milieuvriendelijke eierbal ontwikkeld: een doorsnede van een klassieke eierbal, maar dan volledig composteerbaar en gevuld met bloemzaadjes.
+                    </p>
+                </div>
+            </div>
+
+            
+            <div class="flex justify-center order-1 md:order-2 w-full">
+               
+                <div class="onze-visie-wrapper w-full max-w-md">
+                    <img src="Group 4.svg" alt="Deze vaste SVG achtergrond" />
+                    <div class="onze-visie-text">
+                        <div>
+                            <h2 class="text-3xl font-bold text-white mb-6">Onze Visie</h2>
+                            <p class="text-white text-sm leading-relaxed">
+                               Hang onze eierbal in je kerstboom als een warme, gezellige decoratie.  Wanneer de feestdagen voorbij zijn, hoef je hem niet weg te gooien — je plant hem gewoon in de grond.  Binnen enkele weken groeien er vrolijke bloemen uit, dankzij de zaadjes die in de bal zijn verwerkt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="w-full py-20 mt-20">
+        <div class="max-w-6xl mx-auto px-4">
+            
+            <div class="bg-[#C59132] rounded-2xl w-full py-20">
+                <div class="max-w-4xl mx-auto px-4">
+                    <h2 class="text-4xl font-bold text-white mb-12 text-center">Zaai Instructies</h2>
+
+                    <div class="space-y-6">
+                       
+                        <div class="bg-white rounded-lg p-6 shadow-lg flex gap-4 hover:shadow-xl transition">
+                            <div class="flex-shrink-0 w-10 h-10 bg-[#A0532A] rounded-full flex items-center justify-center text-white font-bold text-xl">
+                                1
+                            </div>
+                            <div>
+                                <p class="text-gray-800">
+                                    Verwijder de kerstbal na de kerst uit je kerstboom en leg de eierschaal 
+                                    met het zaad in een compostbak of ander geschikt aarde.
+                                </p>
+                            </div>
+                        </div>
+
+                       
+                        <div class="bg-white rounded-lg p-6 shadow-lg flex gap-4 hover:shadow-xl transition">
+                            <div class="flex-shrink-0 w-10 h-10 bg-[#A0532A] rounded-full flex items-center justify-center text-white font-bold text-xl">
+                                2
+                            </div>
+                            <div>
+                                <p class="text-gray-800">
+                                    Geef het water zodat het vochtig blijft (niet nat) en zorg dat het zaad 
+                                    genoeg zonlicht krijgt. Na een paar weken zullen de eerste kiemen 
+                                    verschijnen en kun je ze zien groeien tot bloemen.
+                                </p>
+                            </div>
+                        </div>
+
+                       
+                        <div class="bg-white rounded-lg p-6 shadow-lg flex gap-4 hover:shadow-xl transition">
+                            <div class="flex-shrink-0 w-10 h-10 bg-[#A0532A] rounded-full flex items-center justify-center text-white font-bold text-xl">
+                                3
+                            </div>
+                            <div>
+                                <p class="text-gray-800">
+                                    Wanneer de planten sterk genoeg zijn (ongeveer 10 cm hoog), kun je ze 
+                                    verplanten naar je tuin of in een grotere pot. Geniet van je eigen 
+                                    bloementuin die ontstaan is uit de kerstbal!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="max-w-6xl mx-auto px-4 py-20">
+        <div class="flex justify-center gap-8 items-start">
+
+            <!-- Left green box -->
+            <form class="grid md:grid-cols-2 gap-6 al">
+
+                <div class="col-span-2">
+                    <label class="block text-gray-700 text-sm mb-1">Volledige naam</label>
+                    <input type="text" required
+                        class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-400 outline-none">
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 text-sm mb-1">E-mail</label>
+                    <input type="email" required
+                        class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-400 outline-none">
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 text-sm mb-1">Telefoonnummer</label>
+                    <input type="tel"
+                        class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-400 outline-none">
+                </div>
+
+                <div class="col-span-2">
+                    <label class="block text-gray-700 text-sm mb-1">Bericht</label>
+                    <textarea rows="4" required
+                        class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-400 outline-none"></textarea>
+                </div>
+
+                <div class="col-span-2">
+                    <button type="submit"
+                        class="w-full bg-[#259A47] text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition">
+                        Verstuur bericht
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    
+
+    <!-- FOOTER -->
+   
+    <footer class="py-12 footer-with-svg" style="background-image: url('fooottteeerr.png');">
+        <div class=" mx-auto px-4">
+            <h3 class="text-white text-2xl font-bold text-center mb-8">Volg ons op de socials</h3>
+
+            <!-- Social icons -->
+            <div class="flex justify-center gap-6 mb-8">
+                <a href="#" class="w-12 h-12 bg-[#FEE56A] rounded-lg flex items-center justify-center hover:bg-yellow-400 hover:scale-110 transition shadow-lg">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                </a>
+                <a href="#" class="w-12 h-12 bg-[#FEE56A] rounded-lg flex items-center justify-center hover:bg-yellow-400 hover:scale-110 transition shadow-lg">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+                <a href="#" class="w-12 h-12 bg-[#FEE56A] rounded-lg flex items-center justify-center hover:bg-yellow-400 hover:scale-110 transition shadow-lg">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                    </svg>
+                </a>
+                <a href="#" class="w-12 h-12 bg-[#FEE56A] rounded-lg flex items-center justify-center hover:bg-yellow-400 hover:scale-110 transition shadow-lg">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    </svg>
+                </a>
+            </div>
+
+            <p class="text-white text-center text-sm">© 2024 Kersteierbal. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        
+
+        // Add scroll animation
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (sectionTop < windowHeight * 0.75) {
+                    section.style.opacity = '1';
+                    section.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        // Initialize sections with fade-in effect
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        });
+
+        // Trigger initial animation
+        window.dispatchEvent(new Event('scroll'));
+    </script>
+
 </body>
+
 </html>
