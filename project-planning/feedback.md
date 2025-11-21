@@ -7,3 +7,8 @@
 - te kleine letters
 - rare overgangen bij eierbal/filmpje
 - te klein logo
+
+## Aanpassing
+Het logo hebben we een beetje groter gemaakt.
+De kleine letters zijn iets vergroot.
+De rare overgang in het filmpje is gefixt.
