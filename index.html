@@ -20,13 +20,14 @@
         <div
             class="max-w-6xl mx-auto bg-[#FEE56A] rounded-2xl px-6 flex items-center justify-between shadow-lg relative">
 
-            <img src="./images/image/logo.png" class="w-32 md:w-[100px] h-[50px] mt-1" alt="logo" >
+            <img src="./images/image/logo.png" class="w-32 md:w-[100px] h-[50px] mt-1" alt="logo">
 
             <nav class="hidden md:flex gap-8 font-semibold text-sm flex-1 justify-center">
                 <a href="#product" class="hover:text-green-700 transition">Ons product</a>
                 <a href="#over" class="hover:text-green-700 transition">Over ons</a>
                 <a href="#contact" class="hover:text-green-700 transition">Contact</a>
                 <a href="#bestellen" class="hover:text-green-700 transition">Bestellen</a>
+                <a href="directions/game.html" class="hover:text-green-700 transition">Spel</a>
             </nav>
 
             <button aria-label="cart-menu-button" id="cart-btn-desktop" class="hidden md:block">
@@ -57,7 +58,7 @@
                 <a href="#bestellen" class="hover:text-green-700 transition">Bestellen</a>
             </div>
 
-            </div>
+        </div>
     </header>
 
     <main>
@@ -79,74 +80,79 @@
             </div>
         </section>
 
-        <section class="max-w-6xl mx-auto mt-20 flex flex-col md:flex-row gap-10 items-center px-2">
+        <section class="max-w-6xl mx-auto mt-20 px-2 relative">
 
-            <div class="relative w-full md:w-1/2">
+            <div class="flex flex-col md:flex-row items-start gap-10">
 
-                <img src="./images/svg/group-4.svg" alt="svg-background" class="w-full">
+                <div class="relative w-full md:w-1/2 z-10">
+    <img src="./images/svg/group-4.svg" class="w-full">
 
-                <div class="absolute top-0 left-0 p-10">
+    <div class="absolute top-0 left-0 p-20 md:p-32 ml-12">
+        <h2 class="font-prater text-xl md:text-3xl text-white">De Kersteierbal.</h2>
 
-                    <h2 class="font-prater text-3xl text-white">
-                        De Kersteierbal.
-                    </h2>
+        <p class="font-mont text-white mt-4 leading-relaxed text-sm md:text-base">
+            Onze duurzame kerstbal verandert na de feestdagen in een kleurrijk bloemenveld.
+            Gemaakt van natuurlijke materialen en gevuld met bloemzaden, biedt hij een unieke
+            manier om een warm kerstgevoel om te zetten in iets dat blijft groeien.
+        </p>
 
-                    <p class="font-mont text-white mt-4 leading-relaxed">
-                        Onze duurzame kerstbal verandert na de feestdagen in een kleurrijk bloemenveld.
-                        Gemaakt van natuurlijke materialen en gevuld met bloemzaden, biedt hij een unieke
-                        manier om een warm kerstgevoel om te zetten in iets dat blijft groeien.
-                        Hang hem in december in de boom en plant hem in het voorjaar voor een blijvende
-                        herinnering die elk seizoen opnieuw tot leven kan komen.
-                    </p>
+        <a href="#"
+           class="inline-block mt-5 bg-[#FEE56A] text-black font-semibold px-4 py-2 md:px-6 md:py-2 rounded-lg font-prater text-sm md:text-base">
+            Bestel hier
+        </a>
+    </div>
+</div>
 
-                    <a href="#"
-                        class="inline-block mt-5 bg-[#FEE56A] text-black font-semibold px-6 py-2 rounded-lg font-prater">
-                        Bestel hier
-                    </a>
-
+                <div class="w-full md:w-1/2 relative">
+                    <video src="./video/video.mp4" autoplay loop muted playsinline class="rounded-xl shadow-lg w-full object-cover
+                       md:relative md:top-1/2 md:-translate-y-1/2 md:-left-50 md:top-120 md:w-[110%] z-20">
+                    </video>
                 </div>
-            </div>
 
-            <video src="./video/video.mp4" autoplay loop muted playsinline
-                class="rounded-xl shadow-lg w-full md:w-1/2 object-cover">
-            </video>
+            </div>
 
         </section>
 
-        <section id="over" class="max-w-6xl mx-auto px-4 mt-20 mb-20">
+
+        <section id="over" class="max-w-6xl mx-auto px-4 mt-20 mb-20 w-full ">
             <div class="grid md:grid-cols-2 gap-12 items-center">
 
+
                 <div class="flex justify-center order-2 md:order-1">
-                    <div class="bg-[#259A47] p-10 text-white shadow-xl max-w-md rounded-2xl">
+                    <div class="bg-[#259A47] p-10 text-white shadow-xl rounded-2xl w-full max-w-xl">
                         <h2 class="text-3xl font-bold mb-4">Over ons</h2>
-                        <p class="text-sm leading-relaxed">
+                        <p class="text-sm leading-wide">
                             Bij Kerst Eierballen geloven we dat traditie én duurzaamheid perfect samen kunnen gaan.
-                            Daarom
-                            hebben we een unieke, milieuvriendelijke eierbal ontwikkeld: een doorsnede van een klassieke
+                            Daarom hebben we een unieke, milieuvriendelijke eierbal ontwikkeld: een doorsnede van een
+                            klassieke
                             eierbal, maar dan volledig composteerbaar en gevuld met bloemzaadjes.
                         </p>
                     </div>
                 </div>
 
 
-                <div class="flex justify-center order-1 md:order-2 w-full">
+                <div class="flex justify-center order-2 w-full relative">
+                    
 
-                    <div class="onze-visie-wrapper w-full max-w-md">
-                        <img src="./images/svg/group-4.svg" alt="svg-background" />
-                        <div class="onze-visie-text">
-                            <div>
-                                <h2 class="text-3xl font-bold text-white mb-6">Onze Visie</h2>
-                                <p class="text-white text-sm leading-relaxed">
-                                    Hang onze eierbal in je kerstboom als een warme, gezellige decoratie.  Wanneer de
-                                    feestdagen voorbij zijn, hoef je hem niet weg te gooien — je plant hem gewoon in de
-                                    grond. Binnen enkele weken groeien er vrolijke bloemen uit, dankzij de zaadjes die
-                                    in
-                                    de bal zijn verwerkt.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+<div class="relative w-full md:w-auto md:right-35 md:top-40">
+    <img src="./images/svg/group-4.svg" class="w-full">
+
+    <div class="absolute top-0 left-0 p-20 ml-5 md:ml-0 md:p-35">
+        <h2 class="text-2xl md:text-3xl font-bold text-white  md:mb-6 text-center">Onze Visie</h2>
+        <p class="text-white text-sm md:text-base leading-relaxed">
+            Hang onze eierbal in je kerstboom als een warme, gezellige decoratie. Wanneer de feestdagen
+            voorbij zijn, hoef je hem niet weg te gooien — je plant hem gewoon in de grond. Binnen
+            enkele weken groeien er vrolijke bloemen uit, dankzij de zaadjes die in de bal zijn
+            verwerkt.
+        </p>
+    </div>
+</div>
+
+
+
                 </div>
+
+
             </div>
         </section>
 
@@ -252,12 +258,13 @@
 
             <div class="flex justify-between items-center mb-4">
                 <h2 class="text-xl font-bold">Jouw winkelwagen</h2>
-                <button id="cart-close" class="text-2xl font-light text-white hover:text-yellow-400 transition">&times;</button>
+                <button id="cart-close"
+                    class="text-2xl font-light text-white hover:text-yellow-400 transition">&times;</button>
             </div>
 
             <div id="cart-items" class="flex-1 overflow-y-auto space-y-4">
                 <p>Jouw winkelwagen is leeg.</p>
-                </div>
+            </div>
 
             <button class="mt-6 bg-[#FEE56A] text-black py-3 rounded-xl font-bold hover:bg-yellow-400 transition">
                 Bestelling plaatsen
@@ -267,9 +274,9 @@
 
     </main>
 
-    <footer class="py-12 bg-[url(../images/image/footer.png)] bg-cover bg-center mt-20">
-        <div class=" mx-auto px-4">
-            <h3 class="text-white text-2xl font-bold text-center mb-8">Volg ons op de socials</h3>
+    <footer class="md:py-32 py-20 bg-[url('/images/image/footer.png')] bg-cover bg-center mt-20">
+        <div class=" mx-auto px-4 mt-45">
+            <h3 class="text-white text-2xl font-bold text-center mt-10 mb-10">Volg ons op de socials</h3>
 
             <div class="flex justify-center gap-6 mb-8">
                 <a href="#"
@@ -306,7 +313,6 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="./src/js/main.js"></script>
 
 </body>
