@@ -1,8 +1,6 @@
-import { defineConfig } from 'vite';
-import tailwindcss from '@tailwindcss/vite';
-
-export default defineConfig({
-    plugins: [
-        tailwindcss(),
-    ],
-});
+export default {
+    server: {
+        port: 5173,  // Portu 5173 olarak ayarlıyoruz.
+        open: true,   // Sunucu başlatıldığında otomatik açılması için
+    },
+};
